@@ -1,0 +1,50 @@
+/* .eitthvað vísar í öll element með class="eitthvað" */
+/* #eitthvað vísar í öll element með id="eitthvað" .... venjulega notum við þetta bara til að vísa í stakt element */
+/* p vísar í öll element af tagi p */
+* {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+}
+
+p {
+  color: #ffaa99;
+}
+
+.container {
+  background-color: gray;
+  margin: 10px;
+  padding: 10px;
+}
+
+.orange {
+  color: orange;
+}
+
+.attention {
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: line-through;
+  color: blue;
+
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
